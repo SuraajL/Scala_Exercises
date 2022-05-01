@@ -1,11 +1,10 @@
 import scala.collection.immutable.HashMap
 
-object RomanNumeralDecoder {
+object Roman_Numeral_Decoder {
   def main(args: Array[String]): Unit = {
     def decode(input: String): Int = {
-      var romanMap = HashMap("I" -> 1,
-        "V" -> 5, "X" -> 10, "L" -> 50,
-        "C" -> 100, "D" -> 500, "M" -> 1000)
+      var romanMap = HashMap("I" -> 1, "V" -> 5, "X" -> 10,
+        "L" -> 50, "C" -> 100, "D" -> 500, "M" -> 1000)
       var replaceMap = HashMap("IV" -> "IIII", "IX" -> "VIIII",
         "XL" -> "XXXX", "XC" -> "LXXXX", "CD" -> "CCCC", "CM" -> "DCCCC")
       var sum = 0
