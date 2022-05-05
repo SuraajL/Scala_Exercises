@@ -27,7 +27,7 @@ object Roman_Numeral_Encoder extends App {
 
       convertedInput
     }
-    println(decode(99))
+    println(encode(99))
 }
 
 //converts number to roman numeral equivalent
