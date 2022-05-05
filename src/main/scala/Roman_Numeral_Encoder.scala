@@ -1,7 +1,7 @@
 import scala.collection.immutable.HashMap
 
 object Roman_Numeral_Encoder extends App {
-    def decode(input: Int): String = {
+    def encode(input: Int): String = {
       var romanMap = HashMap(1 -> "I", 5 -> "V", 10 -> "X" ,
         50 -> "L", 100 -> "C" , 500 -> "D", 1000 -> "M")
       var replaceMap = HashMap("IIII" -> "IV", "VIIII" -> "IX",
